@@ -1,0 +1,102 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-family: "Open Sans", sans-serif;
+}
+
+body {
+    height: 100vh;
+    display: flex
+}
+
+body > .reg-form {
+    margin: auto;
+}
+
+.reg-form {
+    border-radius: 5px;
+    border: 1px solid white;
+    width: 360px;
+    min-height: 100px;
+    box-shadow: 1px 1px 3px 1px #b3b3b3, -1px -1px 3px 1px #b3b3b3 ;
+    
+}
+
+.heading {
+    text-align: center;
+    
+}
+
+.heading, .main {
+    margin: 30px 30px 0 30px;
+}
+
+
+
+label {
+    font-weight: 600;
+}
+
+.input-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 20px 0
+}
+
+#input__name , #input__email, #input__password, #input__password-again, #province {
+    padding: 8px 12px;
+    border: 1px solid #b3b3b3;
+    font-size: 14px;
+    border-radius: 5px;
+}
+
+#input__name:hover , #input__email:hover, #input__password:hover, #input__password-again:hover, #province:hover {
+    border-color: #1dbfaf;
+}
+
+#input__name:focus , #input__email:focus, #input__password:focus, #input__password-again:focus,  #province:focus {
+    outline-color: #1dbfaf;
+}
+
+.form-submit {
+    font-size: 16px;
+    font-weight: 600;
+    color: white;
+    padding: 10px 120px;
+    background-color: #1dbfaf;
+    border: 1px ;
+    border-radius: 5px;
+    cursor: pointer;
+    display: block;
+    margin: 25px;
+}
+
+.form-submit:hover {
+    background-color: #1ac7b6;
+}
+ .invalid > #input__name {
+    border-color: red;
+}
+.invalid > #input__password {
+    border-color: red;
+}
+.invalid > #input__email {
+    border-color: red;
+}
+.invalid > #input__password-again {
+    border-color: red;
+}
+.invalid > #province {
+    border-color: red;
+}
+
+.invalid > .form-message {
+    color: red;
+}
+
+input[name="gender"]:checked {
+    font-size: 20px;
+}
